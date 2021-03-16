@@ -1,0 +1,26 @@
+@font-face{
+    font-family:'EVi';
+    src: url('../fonts/ElleBaskerville.woff') format('woff');
+    src: url('../fonts/ElleBaskerville.woff2') format('woff2');
+    display: fallback;
+}
+
+@font-face{
+    font-family: 'EViB';
+    src: url('../fonts/ElleBaskerville-Bold.woff') format('woff');
+    src: url('../fonts/ElleBaskerville-Bold.woff2') format('woff2');
+    display: fallback;
+}
+
+@font-face{
+    font-family: 'EviB-Italic';
+    src: url('../fonts/ElleBaskerville-BoldItalic.woff') format('woff');
+    src: url('../fonts/ElleBaskerville-BoldItalic.woff2') format('woff2');
+    display: fallback;
+}
+@font-face{
+    font-family: 'Italic';
+    src: url('../fonts/ElleBaskerville-Italic.woff') format('woff');
+    src: url('../fonts/ElleBaskerville-Italic.woff2') format('woff2');
+    display: fallback;
+}
