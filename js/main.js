@@ -3,7 +3,6 @@ $(window).on('load',function(){
 })
 //
 
-
     let $carousel__group = $('.work__room-card');
         $carousel__group.flickity({
         cellSelector:'.work__room-item',
@@ -14,24 +13,10 @@ $(window).on('load',function(){
         friction: 1,
         selectedAttraction: 0.05,
      });
+
    var width = $(window).width();
     console.log(width);
-    if (width > 768){
-        let $carousel__group = $('.work__room-card');
-        $carousel__group.flickity({
-        cellSelector:'.work__room-item',
-        pageDots: false,
-        groupCells: 1,
-        prevNextButtons: false,
-        wrapAround: true,
-        draggable: true,
-        friction: 1,
-        selectedAttraction: 0.05,
-     });
-    }
-   var width = $(window).width();
-    console.log(width);
-    if (width <= 768 || width > 480){
+    if (width <= 768 && width >= 480){
         let $carousel__group = $('.work__room-card');
         $carousel__group.flickity({
         cellSelector:'.work__room-item',
@@ -147,7 +132,12 @@ $carousel__details.flickity({
     // cellSelector: ".work__room-item",
     pageDots: false,
     cellAlign:'left',
+    pageDots: false,
     prevNextButtons: false,
+    wrapAround: true,
+    draggable: true,
+    friction: 1,
+    selectedAttraction: 0.05,
 })
   $('.next-details').on( 'click', function() {
   $carousel__details.flickity('next',true);
